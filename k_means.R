@@ -56,7 +56,7 @@ colnames(df_pharm_seg)
 
 #============================== import metadata for https://projector.tensorflow.org/ visualization & merge dfs===================
 
-mtdt<- read_excel("D:/PharmaOanaCod/KNN pharmacies/mtdt.xlsx")
+mtdt<- read_excel("D:/KNN/mtdt.xlsx")
 df_all<-merge(x=df_pharm_seg, y=mtdt, by.x = "unitid", by.y = "PHID")
 
 head(df_all[3:75])
